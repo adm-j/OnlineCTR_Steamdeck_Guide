@@ -94,7 +94,7 @@ Select main menu in the bottom right corner then select the game menu option.
 you have got this far it's time to test it in gaming mode.
 
 
-19) Go to gaming mode and try to play it. Using the steam button, you will have a menu that will allow you to
+18) Go to gaming mode and try to play it. Using the steam button, you will have a menu that will allow you to
 switch between the client and Duckstation - note that you may need to enable developer mode first, which you can find in
 the steam settings in gaming mode. Use this to select the client and type your username in (steam button + b to bring up virtual keyboard) 
 and switch back. If everything was done correctly, you should connect and get online!
