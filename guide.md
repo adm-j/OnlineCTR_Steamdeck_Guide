@@ -49,11 +49,10 @@ Place Duckstation, the patched game and the client in here as you see fit. For e
 
 
 9)  At this point you'll either want to change the target path for the VC++ runtime in your steam deck library or simply add
-the Duckstation executable as a none steam game. You can follow the previous instructions if you decide to do the latter to set it up
-correctly.
+the Duckstation executable as a none steam game. You can follow the previous instructions to set it up.
 
 
-10)  At this point you may want to play Duckstation, which will take you through the first time setup process. Follow the instructions,
+10)  At this point it's a good idea to run Duckstation by selecting it in the library and pressing play, which will take you through the first time setup process. Follow the instructions,
 making sure to add your bios inside the prefix for Duckstation to find as well. Once setup, go into the settings and modify the settings
 as per the instructions in the Online CTR discord. Additionally, make sure the graphics adapter has the deck's APU selected.
 
@@ -95,6 +94,7 @@ Select main menu in the bottom right corner then select the game menu option.
 you have got this far it's time to test it in gaming mode.
 
 
-19) Go to gaming mode and try to play it. You should have both windows open. Using the steam button, open a menu to allow you to
-switch between the client and Duckstation. Use this to select the client and type your username in and switch back. If everything
-was done correctly, you should connect and get online! If you can't switch windows, check if developer mode is enabled in steam settings.
+19) Go to gaming mode and try to play it. Using the steam button, you will have a menu that will allow you to
+switch between the client and Duckstation - note that you may need to enable developer mode first, which you can find in
+the steam settings in gaming mode. Use this to select the client and type your username in (steam button + b to bring up virtual keyboard) 
+and switch back. If everything was done correctly, you should connect and get online!
