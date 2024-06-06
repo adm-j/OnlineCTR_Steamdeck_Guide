@@ -3,9 +3,9 @@
 - Install Steam Tinker Launch using "ProtonUp-Qt"
 - Install VC++ runtime by adding to steam as game and running using proton
 - Find prefix created by proton and add your duckstation, client and game somewhere in this location eg. documents
-- Add duckstation's executable to steam as a game/change the target for the VC++ runtime to the duckstation executable
+- Change the target for the VC++ runtime to the duckstation executable
 - Setup duckstation, including your bios and the required settings as defined via OnlineCTR instructions
-- Additionally in duckstation, make sure you configure your controller settings and check the steam deck APU as the graphics adaptor
+- Additionally in duckstation, make sure you configure your controller settings, select a renderer (Vulkan) and the GPU as they are not selected by default.
 - Change the compatibility option from proton to Steam Tinker Launch
 - Run the game in steam and select main menu on the Steam Tinker Launch menu
 - Select the following options:
