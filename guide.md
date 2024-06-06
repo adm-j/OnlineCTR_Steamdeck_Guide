@@ -153,7 +153,7 @@ Part 2
 
 Part 3
 
-![image](./img/Screenshot_20240606_205702.png)
+![image](./img/Screenshot_20240606_205744.png)
 
 
 17)  Now you should be good to go! Select save and play to save these settings and run it again and you should find both Duckstation and 
