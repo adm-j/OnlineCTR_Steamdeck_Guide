@@ -48,16 +48,57 @@ properties to see the date and time it was made.
 Place Duckstation, the patched game and the client in here as you see fit. For example, I created two seperate directories for them.
 
 
-9)  At this point you'll either want to change the target path for the VC++ runtime in your steam deck library or simply add
-the Duckstation executable as a none steam game. You can follow the previous instructions to set it up.
+9)  Now go back to steam, find the VC++ runtime that you added and right click to get the properties up once more. Now we will
+change the Target and Start in properties in the shortcut tab to Duckstation inside your prefix. I've renamed it to Duckstation for
+the screenshot.
 
+![image](./img/Screenshot_20240606_192236.png)
 
-10)  At this point it's a good idea to run Duckstation by selecting it in the library and pressing play, which will take you through the first time setup process. Follow the instructions,
-making sure to add your bios inside the prefix for Duckstation to find as well. Once setup, go into the settings and modify the settings
-as per the instructions in the Online CTR discord. Additionally, make sure the graphics adapter has the deck's APU selected.
+Your target should have something like this in it below:
+`/home/deck/.local/share/Steam/steamapps/compatdata/<prefix>/pfx/drive_c/users/steamuser/duckstation/duckstation-windows-x64-release`
 
+For start in, use the same filepath but add the name of the executable on the end. The default should be something like `duckstation-qt-x64-ReleaseLTCG.exe`.
+Don't forget the forward slash.
 
-11)  Next we need to get Steam Tinker Launch. To do this we'll install it using ProtonUp-QT. Open the discover store and install it. 
+10)  Next we setup Duckstation. Run it and follow the instructions, you will need to add your bios to a filepath that should look something like this:
+`/home/deck/.local/share/Steam/steamapps/compatdata/<prefix>/pfx/drive_c/users/steamuser/Documents/DuckStation/bios`
+
+Please note that on the bios screen, you need to select auto-detect for NTSC-UC and if it is correctly detecting your bios, it should list them. If this
+is not the case, make sure your bios are in the correct location and then cancel and restart the Duckstation setup process.
+
+Additionally you will need to set a location to find onlinectr from within the prefix. For example I use the following path:
+`/home/deck/.local/share/Steam/steamapps/compatdata/<prefix>/pfx/drive_c/users/steamuser/onlinectr`
+
+Create a folder to place your game and place your patched version of the game here. Make sure you select it in the Duckstation setup.
+It should look something like this:
+
+![image](./img/Screenshot_20240606_200440-1.png)
+
+To keep things simple, I would suggest placing the client in this folder as well - the instructions will assume you are doing this. Place
+your game in here alongside the client so Duckstation will detect it.
+
+Next, configure the player 1 controller by selecting SDL-0 as shown below:
+
+![image](./img/Screenshot_20240606_200617.png)
+
+Now Duckstations setup should be done and it will open. Go to settings and set things up as shown in the screenshots.
+
+Interface:
+
+![image](./img/Screenshot_20240606_203932.png)
+
+Console:
+
+![image](./img/Screenshot_20240606_201605.png)
+
+Graphics:
+
+![image](./img/Screenshot_20240606_201644.png)
+
+Note: Make sure you set the renderer and adapter otherwise you will get errors when you try to play the game!
+
+11)  Now we are finished setting up Duckstation, next we need to get Steam Tinker Launch. To do this we'll install it using ProtonUp-QT. 
+Close Duckstation for now, open the discover store and install it. 
 
 ![image](./img/Screenshot_20240604_190622.png)
 
@@ -81,6 +122,13 @@ I've renamed Duckstation in my library to Online CTR.
 15)  Run the game. You will be presented with the Steam Tinker Launch screen. It will only appear for 2 seconds (by default, is configurable).
 Select main menu in the bottom right corner then select the game menu option.
 
+![image](./img/Screenshot_20240606_204753.png)
+
+![image](./img/Screenshot_20240606_204846.png)
+
+For the next bit a mouse would be recommended. If you don't have one you can easily use, you can use the left trackpad to scroll, which will make
+navigating much easier. You can scroll down with a clockwise movement and up with anti-clockwise. It might not be super clear, but in the next
+section you will need to scroll through options and find those listed in the next step.
 
 16)  Select the following options:
        - select "use custom command" - then in custom command, add client.exe
@@ -89,9 +137,27 @@ Select main menu in the bottom right corner then select the game menu option.
        - (optional) in "Game command arguments" add arguments for launching duckstation. Would recommend at least using
        "-bigpicture" or "-boot </path/to/onlinectr>"
 
+Some screenshots of how this will look:
 
-17)  Select save and now you should be good to go! Try running it again and you should find both Duckstation and the client open. If
-you have got this far it's time to test it in gaming mode.
+Game Menu:
+
+![image](./img/Screenshot_20240606_205816.png)
+
+Part 1
+
+![image](./img/Screenshot_20240606_205636.png)
+
+Part 2
+
+![image](./img/Screenshot_20240606_205702.png)
+
+Part 3
+
+![image](./img/Screenshot_20240606_205702.png)
+
+
+17)  Now you should be good to go! Select save and play to save these settings and run it again and you should find both Duckstation and 
+the client open. If you have got this far it's time to test it in gaming mode.
 
 
 18) Go to gaming mode and try to play it. Using the steam button, you will have a menu that will allow you to
